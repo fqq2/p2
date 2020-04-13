@@ -3,12 +3,12 @@ import React from 'react';
 const renderButton = (taskId, column, btnText, callbackFn) => {
     if (btnText && callbackFn) {
         return (
-            <div>
-                <a href="#"
-                   className="card-link"
+            <div className="m-2">
+                <button
+                   className="btn btn-outline-primary"
                    onClick={onCardAction(taskId, column, callbackFn)}>
                     { btnText }
-                </a>
+                </button>
             </div>
         );
     } else {

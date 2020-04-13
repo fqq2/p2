@@ -15,10 +15,10 @@ class PageTabs extends React.Component {
     return (
       <ul className='nav'>
         <li className='nav-item'>
-          <a className={this.isActiveTab('grid')}
+          <label className={this.isActiveTab('grid')}
              onClick={(e) => this.onTabClick(e, 'grid')}>
             Grid View
-          </a>
+          </label>
         </li>
       </ul>
     )

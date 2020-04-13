@@ -66,12 +66,11 @@ class App extends React.Component {
     render() {
         const { view } = this.state;
 
-        switch (view) {
-            case 'grid':
-                return (this.wrapPage(
-                    <GridView tasks={this.state.sortedTasks} onUpdateTask={(task)=> this.onUpdateTask(task)} />
-    ));
-    }
+        if (view === 'grid') {
+            return (this.wrapPage(
+                <GridView tasks={this.state.sortedTasks} onUpdateTask={(task)=> this.onUpdateTask(task)} />
+));
+        }
 
     }
 }
