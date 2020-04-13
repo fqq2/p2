@@ -22,7 +22,7 @@ class App extends React.Component {
     }
 
     getTasks() {
-        axios.get(`http://my-json-server.typicode.com/fqq2/db/posts`)
+        axios.get(`https://my-json-server.typicode.com/fqq2/db/posts`)
             .then(response => {
                 this.setState({ allTasks: response.data, sortedTasks: this.sortTasks(response.data) });
             }).catch (error => {
